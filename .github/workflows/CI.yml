@@ -1,0 +1,19 @@
+name: "Sample React CI pipeline"
+
+on:
+    push:
+        branches:
+            - main
+            - master
+
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest  
+        steps:
+            - name: "setup node"
+              uses: actions/setup-node@v3
+              with:
+                 node-version: "14"
+                 
+             
