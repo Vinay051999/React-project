@@ -21,6 +21,9 @@ jobs:
 
             - name: "list done directory"
               run: ls 
+              
+            - name: "Rune lint"
+              run: npm run lint
 
             - name: "install dependencies"
               run: npm install
@@ -30,6 +33,6 @@ jobs:
 
             - name: "Run tests"
               run: npm test
-              
+
             - name: "Run build"
               run: npm run build
