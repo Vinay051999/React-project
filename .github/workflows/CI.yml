@@ -19,3 +19,5 @@ jobs:
 
             - name: "install dependencies"
               run: npm install
+            - name: "list done directory"
+              run: ls 
